@@ -40,13 +40,13 @@ const NavBar = (props) => {
             </Nav.Link>
           
             <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-lg-10" />
-      <Button variant="outline-info">Search the item</Button>
+      <FormControl type="text" placeholder="Search" style={{float: "right"}} className="mr-lg-10" />
+      <Button variant="outline-info"  style={{float: "right"}}>Search the item</Button>
     </Form> 
             
           </Nav>
 
-          {<Button variant="primary" onClick={handleShow}>Admin Login</Button>}
+          {<Button variant="primary" style={{color: "white"}} onClick={handleShow}>Admin Login</Button>}
         </Navbar.Collapse>
       </Navbar>
     </div>

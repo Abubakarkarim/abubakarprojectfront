@@ -83,22 +83,22 @@ function ResponsiveDrawer(props) {
     <div>
       <div className={classes.toolbar} />
       <Divider />
-      <h3>Dishes</h3>
+      <h3>MENU</h3>
       <Nav.Link href="#dish">
-              <Link to="/addform">Add</Link>
+              <Link to="/addform">Add Item</Link>
             </Nav.Link>
             <Nav.Link href="#dish">
-              <Link to="/deletedish">Delete Dish</Link>
+              <Link to="/deletedish">Delete item</Link>
             </Nav.Link>
             <Nav.Link href="#dish">
-              <Link to="/updatedish">Update Dish</Link>
+              <Link to="/updatedish">Update item</Link>
             </Nav.Link>
             <Nav.Link href="#dish">
-              <Link to="/viewdish">View Dish</Link>
+              <Link to="/viewdish">View Items</Link>
             </Nav.Link>
       <Divider />
       <Divider />
-      <h3>Orders</h3>
+      <h3>Order Placed</h3>
      
             <Nav.Link href="#order">
               <Link to="/deleteorder">Delete Order</Link>
@@ -111,7 +111,7 @@ function ResponsiveDrawer(props) {
             </Nav.Link>
       <Divider />
       <Divider />
-      <h3>Customers</h3>
+      <h3>Customers Info</h3>
    
             <Nav.Link href="#cust">
               <Link to="/deletecust">Delete Customer</Link>
@@ -157,13 +157,20 @@ function ResponsiveDrawer(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
-           FOODIE
+          <Typography variant="h4" noWrap>
+           FOOD DESIRE
           </Typography>
+          
         </Toolbar>
+        <Typography >
+           <p style={{color:"white"}}>THE FOOD YOU LOVE, DELIVERED!</p>
+          </Typography>
       </AppBar>
+      
+
       <nav className={classes.drawer} aria-label="mailbox folders">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+        
         <Hidden smUp implementation="css">
           <Drawer
             container={container}
@@ -177,6 +184,8 @@ function ResponsiveDrawer(props) {
             ModalProps={{
               keepMounted: true, // Better open performance on mobile.
             }}
+
+            
           >
             {drawer}
           </Drawer>

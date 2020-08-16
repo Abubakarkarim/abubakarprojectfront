@@ -21,7 +21,7 @@ const ViewDish = () => {
   return (
     <div>
         
-      <h1>Dishes</h1>
+      <h1>Items Available</h1>
           {dish.map((dish, index) => (
             <SingleProduct key={index} dish={dish} />
           ))}

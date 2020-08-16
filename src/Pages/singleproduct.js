@@ -3,7 +3,7 @@ const Singleproduct = ({ dish }) => {
  
   return (
     <div >
-      <table class="table  table-dark table-bordered   ">
+      <table class="table  table-light table-bordered   ">
         <thead>
           <tr>
             <th style={{ width: "25%" }} scope="col">

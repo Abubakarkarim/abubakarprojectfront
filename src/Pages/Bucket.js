@@ -47,10 +47,10 @@ const BucketPage = ({ bucket, dispatch }) => {
               Price
             </th>
             <th style={{ width: "25%" }} scope="col">
-              Qty
+              Quantity
             </th>
             <th style={{ width: "25%" }} scope="col">
-              Total
+              Total Bill
             </th>
           </tr>
         </thead>

@@ -6,7 +6,7 @@ const NightDeals = ({menue,dispatch}) =>{
   
   return (
     <div>
-             <h1 className="header">Nights Deals</h1>
+             <h1 className="header">Special Deals</h1>
  
      <div className="d-flex d.column flex-wrap">
      {menue.map((single) => {

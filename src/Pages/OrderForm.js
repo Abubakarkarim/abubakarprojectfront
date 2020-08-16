@@ -53,8 +53,8 @@ export default function OrderForm({ handleShow, handleClose, show }) {
     </Form.Text>
   </Form.Group>
   
-  <Button variant="primary" type="submit" onClick={handleOrde}>
-    yahooo!!!
+  <Button variant="primary" type="submit" style={{float: "right"}} onClick={handleOrde}>
+    SUBMIT!
   </Button>
 </Form>
         <Modal.Footer>

@@ -20,7 +20,7 @@ const MainPage = ({dispatch}) => {
   "https://d1zj8ir38bm4sy.cloudfront.net/wp-content/uploads/2019/08/aleppo_chicken_wrap850x850-800x850.jpg",
   "https://www.kitchensanctuary.com/wp-content/uploads/2020/04/Chicken-Fried-Rice-square-FS-.jpg",
   "https://media2.s-nbcnews.com/i/newscms/2020_05/1532568/today-food-chloe-cocarelli-today-main-200127-v3_ce4d06e5775cf2d875c690223a2adaf2.jpg",
-""]
+"https://www.tasteofhome.com/wp-content/uploads/2018/01/Chicken-Pizza_exps30800_FM143298B03_11_8bC_RMS.jpg"]
   //let {name, price, description, rating, _id } = menue;
   const menue = {name:"ITEM",price:1000,description:"",rating:"",_id:""};
   return (
