@@ -38,11 +38,6 @@ const NavBar = (props) => {
             <Nav.Link href="#link">
               <Link to="/NightDeals">Special Deals</Link>
             </Nav.Link>
-          
-            <Form inline>
-      <FormControl type="text" placeholder="Search" style={{float: "right"}} className="mr-lg-10" />
-      <Button variant="outline-info"  style={{float: "right"}}>Search the item</Button>
-    </Form> 
             
           </Nav>
 

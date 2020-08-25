@@ -11,6 +11,7 @@ import LoginForm from "../Pages/LoginForm";
 import OrderForm from "../Pages/OrderForm";
 import ViewDish from "../Pages/viewdish";
 import Form from "../Pages/Form";
+import viewCustomer from "../Pages/viewCustomer";
 
 export default function CustomeRoute() {
   return (
@@ -28,6 +29,7 @@ export default function CustomeRoute() {
           <Route path="/addform" component={Form} />
           <Route path="/admincrud" component={admincrud} />
           <Route path="/viewdish" component={ViewDish} />        
+          <Route path="/viewcust" component={viewCustomer} />        
          
           <Route path="*">
             <Error />

@@ -4,6 +4,7 @@ import React from "react";
 import SingleProduct from "../Pages/singleproduct";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 const ViewDish = () => {
   const [dish, setProducts] = React.useState([]);
@@ -22,8 +23,12 @@ const ViewDish = () => {
     <div>
         
       <h1>Items Available</h1>
+      
           {dish.map((dish, index) => (
+            <div>
+            
             <SingleProduct key={index} dish={dish} />
+            </div>
           ))}
     </div>
   );

@@ -88,7 +88,7 @@ function ResponsiveDrawer(props) {
               <Link to="/addform">Add Item</Link>
             </Nav.Link>
             <Nav.Link href="#dish">
-              <Link to="/deletedish">Delete item</Link>
+              <Link to="/viewdish">Delete item</Link>
             </Nav.Link>
             <Nav.Link href="#dish">
               <Link to="/updatedish">Update item</Link>
@@ -100,27 +100,14 @@ function ResponsiveDrawer(props) {
       <Divider />
       <h3>Order Placed</h3>
      
-            <Nav.Link href="#order">
-              <Link to="/deleteorder">Delete Order</Link>
-            </Nav.Link>
-            <Nav.Link href="#order">
-              <Link to="/updateorder">Update Order</Link>
-            </Nav.Link>
-            <Nav.Link href="#order">
-              <Link to="/vieworder">View Order</Link>
-            </Nav.Link>
-      <Divider />
-      <Divider />
-      <h3>Customers Info</h3>
-   
-            <Nav.Link href="#cust">
-              <Link to="/deletecust">Delete Customer</Link>
-            </Nav.Link>
             
-            <Nav.Link href="#cust">
+            <Nav.Link href="#order">
               <Link to="/viewcust">View Customer</Link>
             </Nav.Link>
+           
       <Divider />
+      <Divider />
+      
      
         
       <Divider />

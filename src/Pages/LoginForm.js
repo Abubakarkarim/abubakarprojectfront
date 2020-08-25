@@ -38,7 +38,11 @@ export default function LoginForm({ handleShow, handleClose, show }) {
           <Modal.Title>ADMIN</Modal.Title>
 
         </Modal.Header>
+        <i style={{textAlign:"center"}}>
+        <img src="https://img.icons8.com/bubbles/2x/admin-settings-male.png" width="200px"></img>
+        </i>
         <Modal.Body>ADMIN CAN SIGN IN HERE</Modal.Body>
+  
         <Form>
           <Form.Group controlId="formBasicAdmin">
             <Form.Label>Phone Number/ Email</Form.Label>

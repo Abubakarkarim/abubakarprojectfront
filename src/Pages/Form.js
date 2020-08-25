@@ -2,8 +2,9 @@ import React from "react"
 import Grid from '@material-ui/core/Grid';
 import { TextField, Button } from "@material-ui/core";
 import axios from "axios";
-function Form(){
-
+function Form(props){
+console.log("form");
+console.log(props);
     const [name, setName] = React.useState("")
     const [price, setPrice] = React.useState(0)
     const [desc, setDesc] = React.useState("")
@@ -15,15 +16,19 @@ function Form(){
               .post("http://localhost:3030/dish",{name,price,desc,page})
               .then((response) => {
                   console.log();
+
+                
                
               })
               .catch((e) => console.log(e.message));
+
+              props.history.push("/admincrud")
           }
       
 
     
-    React.useEffect(handlebtn
-        , []);
+    // React.useEffect(handlebtn
+    //     , []);
 
 
    return( <Grid
@@ -50,12 +55,14 @@ function Form(){
     <Grid item xs={12} md={2}></Grid>
     <Grid item xs={12} md={2}></Grid>
     <Grid item xs={12} md={8} >
-    <TextField id="standard-basic" label="Page" value={page} onChange={(e)=>{setPage(e.target.value)}}/>
+    <TextField id="standard-basic" label="Ratings" value={page} onChange={(e)=>{setPage(e.target.value)}}/>
     </Grid>
    
     <Grid item xs={12} md={2}></Grid>
-    <Button variant="contained" color="primary" onClick={handlebtn}>
+    <Button variant="contained" color="primary" onClick={handlebtn} >
   ADD ITEM
+
+
 </Button>
 
 

@@ -10,7 +10,7 @@ import Footer from "./Footer";
 import { connect } from "react-redux";
 import RecipeReviewCard from "../components/Card";
 import { Form, FormControl, Button } from "react-bootstrap";
-const MainPage = ({dispatch}) => { 
+const MainPage = ({dispatch, menue}) => { 
 
   const src = ["https://www.readersdigest.ca/wp-content/uploads/2015/11/gourmet-burger-scaled.jpg",
   "https://static.toiimg.com/photo/53110049.cms",
@@ -21,8 +21,10 @@ const MainPage = ({dispatch}) => {
   "https://www.kitchensanctuary.com/wp-content/uploads/2020/04/Chicken-Fried-Rice-square-FS-.jpg",
   "https://media2.s-nbcnews.com/i/newscms/2020_05/1532568/today-food-chloe-cocarelli-today-main-200127-v3_ce4d06e5775cf2d875c690223a2adaf2.jpg",
 "https://www.tasteofhome.com/wp-content/uploads/2018/01/Chicken-Pizza_exps30800_FM143298B03_11_8bC_RMS.jpg"]
-  //let {name, price, description, rating, _id } = menue;
-  const menue = {name:"ITEM",price:1000,description:"",rating:"",_id:""};
+  
+//let {name, price, description, rating, _id } = menue;
+// const menue = {name:"Abubakar",price:500,description:"Its yummy",rating:"",_id:""};
+  //      const menue = {name:"Abubakar1",price:500,description:" Delicious",rating:"",_id:""};
   return (
     <div>
 
@@ -31,9 +33,9 @@ const MainPage = ({dispatch}) => {
       <div className="d-flex d.column flex-wrap">
       
 
-        {src.map((single,index) => {
+        {menue.map((single,index) => {
           //return <CardHolder src={src[index]} dispatch={dispatch} menue={single} />;
-          return   <RecipeReviewCard  src={src[index]} menue={menue} dispatch={dispatch}/>
+          return   <RecipeReviewCard  src={src[index]} menue={single} dispatch={dispatch}/>
         })}
       </div>
 
